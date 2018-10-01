@@ -12,7 +12,7 @@ import time
 
 def Writer_function(inputfile,size,outputfile):
 
-    sht = xw.Book(r'D:\\Market\\Fetcher\\fetcher\\'+inputfile).sheets[0]
+    sht = xw.Book(r'C:\\Users\\admin\Documents\Datafeeds\\'+inputfile).sheets[0]
   #  Sheet = xw.Book(r'C:\\Users\\admin\Documents\Datafeeds\\'+inputfile).sheets[1]
   #  wrt = Sheet
     CSV = open(outputfile,'w')
@@ -62,7 +62,7 @@ if __name__=="__main__":
     #p2 = Process(target=Writer_function, args=("Currency.xlsx",26))
     p3 = Process(target=Writer_function,args=("BankNifty.xlsx",12,"1-10BankNiftydata.txt"))
     #p4 = Process(target=Writer_function,args=("Options.xlsx",50))
-    p5 = Process(target=Writer_function,args=("Options.xlsx",51,"1-10Octoptions.txt"))
+    p5 = Process(target=Writer_function,args=("optionsnextexpiry.xlsx",51,"1-10Octoptions.txt"))
     #p6 = Process(target=Writer_function,args=("Commodities.xlsx",51,"Commodities.csv"))
 
 
